@@ -11,3 +11,4 @@ jobs:
           identifier: Package.Identifier
           installers-regex: '\.msi$' # Only .msi files
           token: ${{ secrets.WINGET_TOKEN }}
+
