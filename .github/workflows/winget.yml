@@ -10,5 +10,5 @@ jobs:
         with:
           identifier: Package.Identifier
           installers-regex: '\.msi$' # Only .msi files
-          token: ${{ secrets.WINGET_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.WINGET_TOKEN }}
 
