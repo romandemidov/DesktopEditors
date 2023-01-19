@@ -9,6 +9,6 @@ jobs:
       - uses: vedantmgoyal2009/winget-releaser@v1
         with:
           identifier: Package.Identifier
-          installers-regex: '\.msi$' # Only .msi files
+          installers-regex: '64\.msi$' # Only .msi files
           token: ${{ secrets.WINGET_TOKEN }}
 
