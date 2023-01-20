@@ -6,13 +6,13 @@ jobs:
   publish:
     runs-on: windows-latest
     steps:
-      - name: Publish X to WinGet
+      - name: Publish EXE to WinGet
         uses: vedantmgoyal2009/winget-releaser@v1
         with:
           identifier: Package.Identifier<X>
           installers-regex: '\.exe$' # Only .exe files
           token: ${{ secrets.WINGET_TOKEN }}
-      - name: Publish Y to WinGet
+      - name: Publish MSI to WinGet
         uses: vedantmgoyal2009/winget-releaser@v1
         with:
           identifier: Package.Identifier<Y>
