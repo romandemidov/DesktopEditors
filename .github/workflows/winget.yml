@@ -11,3 +11,5 @@ jobs:
           identifier: ONLYOFFICE.DesktopEditors
           installers-regex: '\.exe$' # Only .exe files
           token: ${{ secrets.WINGET_TOKEN }}
+          fork-user: romandemidov
+
