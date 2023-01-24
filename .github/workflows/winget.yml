@@ -6,16 +6,8 @@ jobs:
   publish:
     runs-on: windows-latest
     steps:
-      - name: Publish EXE to WinGet
-        uses: vedantmgoyal2009/winget-releaser@v1
+      - uses: vedantmgoyal2009/winget-releaser@v1
         with:
-          identifier: Package.Identifier<X>
+          identifier: ONLYOFFICE.DesktopEditors
           installers-regex: '\.exe$' # Only .exe files
           token: ${{ secrets.WINGET_TOKEN }}
-      - name: Publish MSI to WinGet
-        uses: vedantmgoyal2009/winget-releaser@v1
-        with:
-          identifier: Package.Identifier<Y>
-          installers-regex: '\.msi$' # Only .msi files
-          token: ${{ secrets.WINGET_TOKEN }}
-
