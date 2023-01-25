@@ -12,6 +12,7 @@ jobs:
           identifier: ONLYOFFICE.DesktopEditors<X>
           installers-regex: '\.exe$' # Only .exe files
           token: ${{ secrets.WINGET_TOKEN }}
+          fork-user: romandemidov
       - name: Publish MSI to WinGet
         uses: vedantmgoyal2009/winget-releaser@v1
         with:
