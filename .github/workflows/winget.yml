@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: vedantmgoyal2009/winget-releaser@v1
         with:
-          identifier: ONLYOFFICE.DesktopEditors
+          identifier: Package.Identifier
           installers-regex: '\.exe$|\.msi$'
           token: ${{ secrets.WINGET_TOKEN }}
           fork-user: romandemidov
