@@ -11,4 +11,4 @@ jobs:
           identifier: Package.Identifier
           installers-regex: '\.exe$|\.msi$'
           token: ${{ secrets.WINGET_TOKEN }}
-          fork-user: romandemidov
+
