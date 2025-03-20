@@ -6,13 +6,9 @@ jobs:
   publish:
     runs-on: windows-latest
     steps:
-      - name: Wait for 30 minutes
-        run: |
-          sleep 30m
-
-      - uses: vedantmgoyal2009/winget-releaser@main
+      - name: Publish to WinGet
+        uses: vedantmgoyal9/winget-releaser@main
         with:
           identifier: ONLYOFFICE.DesktopEditors
-          installers-regex: '\.exe$'
+          installers-regex: '(x86|x64)\.(exe|msi)$'
           token: ${{ secrets.WINGET_TOKEN }}
-
